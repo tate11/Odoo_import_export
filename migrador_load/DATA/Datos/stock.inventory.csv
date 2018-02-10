@@ -1,0 +1,98 @@
+date,location_id/.id,name,filter,accounting_date
+2017-10-31,19,Inventario 00101 - Almacén General Valledupar 2017-10-31,partial,2017-10-31
+2017-10-31,31,Inventario 00102 - Almacen De Microingredientes 2017-10-31,partial,2017-10-31
+2017-10-31,00110 - Almacén De Producto Terminado (Ater) Valledupar,Inventario 00110 - Almacén De Producto Terminado (Ater) Valledupar 2017-10-31,partial,2017-10-31
+2017-10-31,413,Inventario 00112 - Bodega Transitoria Producto Paseo 2017-10-31,partial,2017-10-31
+2017-10-31,00113 - Bodega Punto De Venta Deliklaren'S,Inventario 00113 - Bodega Punto De Venta Deliklaren'S 2017-10-31,partial,2017-10-31
+2017-10-31,00115 - Bodega De Productos Semielaborados,Inventario 00115 - Bodega De Productos Semielaborados 2017-10-31,partial,2017-10-31
+2017-10-31,415,Inventario 00116 - Bodega De Empaques 2017-10-31,partial,2017-10-31
+2017-10-31,00120 - Facturacion Leche,Inventario 00120 - Facturacion Leche 2017-10-31,partial,2017-10-31
+2017-10-31,418,Inventario 00150 - Productos Mal Estado 2017-10-31,partial,2017-10-31
+2017-10-31,421,Inventario 00161 - Bodega Calidad 2017-10-31,partial,2017-10-31
+2017-10-31,423,Inventario 001Bc - Bodega Embalaje General Valledupar 2017-10-31,partial,2017-10-31
+2017-10-31,001Bm - Bodega Metroparqueater Valledupar,Inventario 001Bm - Bodega Metroparqueater Valledupar 2017-10-31,partial,2017-10-31
+2017-10-31,425,Inventario 001Bt - Bodega Venta Terceros 2017-10-31,partial,2017-10-31
+2017-10-31,001Bv - Bodega De Vendedores Y/O Distribuidores,Inventario 001Bv - Bodega De Vendedores Y/O Distribuidores 2017-10-31,partial,2017-10-31
+2017-10-31,429,Inventario 001C2 - Bodega Ruta 0102 2017-10-31,partial,2017-10-31
+2017-10-31,430,Inventario 001C3 - Bodega Ruta 0103 2017-10-31,partial,2017-10-31
+2017-10-31,436,Inventario 001C9 - Bodega Ruta 0109 2017-10-31,partial,2017-10-31
+2017-10-31,442,Inventario 001Cf - Bodega Ruta 0119 2017-10-31,partial,2017-10-31
+2017-10-31,443,Inventario 001Ch - Bodega Ruta 0128 2017-10-31,partial,2017-10-31
+2017-10-31,444,Inventario 001Ci - Bodega Ruta 0129 2017-10-31,partial,2017-10-31
+2017-10-31,445,Inventario 001Cj - Bodega Ruta 0116 2017-10-31,partial,2017-10-31
+2017-10-31,450,Inventario 001Co - Bodega Ruta 0125 2017-10-31,partial,2017-10-31
+2017-10-31,452,Inventario 001Cq - Bodega Ruta 0128 2017-10-31,partial,2017-10-31
+2017-10-31,454,Inventario 001Ct - Bodega Almendrales Valiente 2017-10-31,partial,2017-10-31
+2017-10-31,001Ht - Bodega Para Produccion Leche Uht,Inventario 001Ht - Bodega Para Produccion Leche Uht 2017-10-31,partial,2017-10-31
+2017-10-31,457,Inventario 001Ll - Bodega Maquila Ciledco 2017-10-31,partial,2017-10-31
+2017-10-31,458,Inventario 001Lp - Bodega Maquila De Leche En Polvo 2017-10-31,partial,2017-10-31
+2017-10-31,001Ma - Bodega De Mantenimiento,Inventario 001Ma - Bodega De Mantenimiento 2017-10-31,partial,2017-10-31
+2017-10-31,462,Inventario 001Mi - Bodega De Laboratorio 2017-10-31,partial,2017-10-31
+2017-10-31,463,Inventario 001Mo - Bodega Distribucion Monteria 2017-10-31,partial,2017-10-31
+2017-10-31,464,Inventario 001Pt - Bodega Consignacion Mercancia A Terceros 2017-10-31,partial,2017-10-31
+2017-10-31,001Ra    Bodega Ruta Atanquez,Inventario 001Ra    Bodega Ruta Atanquez 2017-10-31,partial,2017-10-31
+2017-10-31,00201 - Almacén General Barranquilla,Inventario 00201 - Almacen General Barranquilla 2017-10-31,partial,2017-10-31
+2017-10-31,00220 - Almacén De Producto Terminado (Ater) Barranquilla,Inventario 00220 - Almacen De Producto Terminado (Ater) Barranquilla 2017-10-31,partial,2017-10-31
+2017-10-31,00250 - Productos En Mal Estado,Inventario 00250 - Productos En Mal Estado 2017-10-31,partial,2017-10-31
+2017-10-31,477,Inventario 002Bv - Bodega De Vendedores Bquilla 2017-10-31,partial,2017-10-31
+2017-10-31,478,Inventario 002C0 - Bodega Ruta 210 2017-10-31,partial,2017-10-31
+2017-10-31,480,Inventario 002C2 - Bodega Ruta 202 2017-10-31,partial,2017-10-31
+2017-10-31,485,Inventario 002C7 - Bodega Ruta 207 2017-10-31,partial,2017-10-31
+2017-10-31,487,Inventario 002C9 - Bodega Ruta 209 2017-10-31,partial,2017-10-31
+2017-10-31,488,Inventario 002Ca - Bodega Ruta 211 2017-10-31,partial,2017-10-31
+2017-10-31,489,Inventario 002Cb - Bodega Ruta 212 2017-10-31,partial,2017-10-31
+2017-10-31,492,Inventario 002Ce - Bodega Ruta 215 2017-10-31,partial,2017-10-31
+2017-10-31,494,Inventario 002Cg - Bodega Ruta 217 2017-10-31,partial,2017-10-31
+2017-10-31,496,Inventario 002Ci - Bodega Ruta 219 2017-10-31,partial,2017-10-31
+2017-10-31,500,Inventario 002Cm - Bodega Ruta 223 2017-10-31,partial,2017-10-31
+2017-10-31,504,Inventario 002Em - Bodega Embalaje Barranquilla 2017-10-31,partial,2017-10-31
+2017-10-31,002C1    Bodega Ruta 201,Inventario 002C1    Bodega Ruta 201 2017-10-31,partial,2017-10-31
+2017-10-31,002C3    Bodega Ruta 203,Inventario 002C3    Bodega Ruta 203 2017-10-31,partial,2017-10-31
+2017-10-31,002C4    Bodega Ruta 204,Inventario 002C4    Bodega Ruta 204 2017-10-31,partial,2017-10-31
+2017-10-31,002C5    Bodega Ruta 205,Inventario 002C5    Bodega Ruta 205 2017-10-31,partial,2017-10-31
+2017-10-31,002C8    Bodega Ruta 208,Inventario 002C8    Bodega Ruta 208 2017-10-31,partial,2017-10-31
+2017-10-31,002Cc    Bodega Ruta 213,Inventario 002Cc    Bodega Ruta 213 2017-10-31,partial,2017-10-31
+2017-10-31,002Cf    Bodega Ruta 216,Inventario 002Cf    Bodega Ruta 216 2017-10-31,partial,2017-10-31
+2017-10-31,002Ch    Bodega Ruta 218,Inventario 002Ch    Bodega Ruta 218 2017-10-31,partial,2017-10-31
+2017-10-31,002Cj    Bodega Ruta 220,Inventario 002Cj    Bodega Ruta 220 2017-10-31,partial,2017-10-31
+2017-10-31,002Ck    Bodega Ruta 221,Inventario 002Ck    Bodega Ruta 221 2017-10-31,partial,2017-10-31
+2017-10-31,002Cl    Bodega Ruta 222,Inventario 002Cl    Bodega Ruta 222 2017-10-31,partial,2017-10-31
+2017-10-31,002Cn    Bodega Ruta 224,Inventario 002Cn    Bodega Ruta 224 2017-10-31,partial,2017-10-31
+2017-10-31,002Cp    Bodega Ruta 0226,Inventario 002Cp    Bodega Ruta 0226 2017-10-31,partial,2017-10-31
+2017-10-31,00330 - Almacén De Producto Terminado (Ater) Cartagena,Inventario 00330 - Almacen De Producto Terminado (Ater) Cartagena 2017-10-31,partial,2017-10-31
+2017-10-31,00350 - Bodega Producto En Mal Estado,Inventario 00350 - Bodega Producto En Mal Estado 2017-10-31,partial,2017-10-31
+2017-10-31,507,Inventario 003Bv - Bodega Vendedores Cartagena 2017-10-31,partial,2017-10-31
+2017-10-31,508,Inventario 003Em - Bodega Embalaje Cartagena 2017-10-31,partial,2017-10-31
+2017-10-31,00412 - Parodi Alfonso,Inventario 00412 - Parodi Alfonso 2017-10-31,partial,2017-10-31
+2017-10-31,73,Inventario 00440 - Almacen De Producto Terminado (Ater) Santa Marta 2017-10-31,partial,2017-10-31
+2017-10-31,00450 - Bodega De Productos En Mal Estado,Inventario 00450 - Bodega De Productos En Mal Estado 2017-10-31,partial,2017-10-31
+2017-10-31,511,Inventario 004Bv - Bodea De Vendedores Santa Marta 2017-10-31,partial,2017-10-31
+2017-10-31,520,Inventario 004Em - Bodega Embalaje Santa Marta 2017-10-31,partial,2017-10-31
+2017-10-31,00550 - Almacén De Producto Term (Ater) Bogota,Inventario 00550 - Almacen De Producto Term (Ater) Bogota 2017-10-31,partial,2017-10-31
+2017-10-31,00551 - Bodega De Productos En Mal Estado Bogota,Inventario 00551 - Bodega De Productos En Mal Estado Bogota 2017-10-31,partial,2017-10-31
+2017-10-31,522,Inventario 005Ag - Bodega Agrodex Bogota 2017-10-31,partial,2017-10-31
+2017-10-31,525,Inventario 00611 - Punto De Distribucion Riohacha 2017-10-31,partial,2017-10-31
+2017-10-31,00611 - Almacén De Producto Terminado (Ater) Riohacha,Inventario 00611 - Almacen De Producto Terminado (Ater) Riohacha 2017-10-31,partial,2017-10-31
+2017-10-31,00650 - Productos En Mal Estado,Inventario 00650 - Productos En Mal Estado 2017-10-31,partial,2017-10-31
+2017-10-31,00660 - Almacén De Productos Terminados (Ater) Maicao,Inventario 00660 - Almacen De Productos Terminados (Ater) Maicao 2017-10-31,partial,2017-10-31
+2017-10-31,527,Inventario 006Bv - Bodega Vendedores Maicao 2017-10-31,partial,2017-10-31
+2017-10-31,528,Inventario 006Em - Bodega Embalaje Maicao 2017-10-31,partial,2017-10-31
+2017-10-31,00750 - Productos En Mal Estado,Inventario 00750 - Productos En Mal Estado 2017-10-31,partial,2017-10-31
+2017-10-31,00751 - Productos En Mal Estado Ocaña,Inventario 00751 - Productos En Mal Estado Ocaña 2017-10-31,partial,2017-10-31
+2017-10-31,00770 - Almacén De Producto Terminado (Ater) Aguachica,Inventario 00770 - Almacen De Producto Terminado (Ater) Aguachica 2017-10-31,partial,2017-10-31
+2017-10-31,531,Inventario 007Ba - Bodega De Vendedores Y/O Distribuidores 2017-10-31,partial,2017-10-31
+2017-10-31,534,Inventario 007Em - Bodega Embalaje Aguachica 2017-10-31,partial,2017-10-31
+2017-10-31,00850 - Productos En Mal Estado,Inventario 00850 - Productos En Mal Estado 2017-10-31,partial,2017-10-31
+2017-10-31,00880 - Almacén De Producto Term (Ater) B/Manga,Inventario 00880 - Almacen De Producto Term (Ater) B/Manga 2017-10-31,partial,2017-10-31
+2017-10-31,537,Inventario 008Bv - Bodega Vendedores/Distribuidores Buca. 2017-10-31,partial,2017-10-31
+2017-10-31,539,Inventario 00911 - Bodega Pdv Principal Valledupar 2017-10-31,partial,2017-10-31
+2017-10-31,540,Inventario 01013 - Bodega Pdv Orbe Plaza Valledupar 2017-10-31,partial,2017-10-31
+2017-10-31,01111    Almacén De Producto Terminado(Ater),Inventario 01111    Almacen De Producto Terminado(Ater) 2017-10-31,partial,2017-10-31
+2017-10-31,01150    Productos Mal Estado,Inventario 01150    Productos Mal Estado 2017-10-31,partial,2017-10-31
+2017-10-31,01212    Almacén De Producto Terminado,Inventario 01212    Almacen De Producto Terminado 2017-10-31,partial,2017-10-31
+2017-10-31,01250    Productos En Mal Estado,Inventario 01250    Productos En Mal Estado 2017-10-31,partial,2017-10-31
+2017-10-31,01313    Almacén Producto Terminado,Inventario 01313    Almacen Producto Terminado 2017-10-31,partial,2017-10-31
+2017-10-31,01350    Productos En Mal Estado,Inventario 01350    Productos En Mal Estado 2017-10-31,partial,2017-10-31
+2017-10-31,01414    Almacén De Producto Terminado,Inventario 01414    Almacen De Producto Terminado 2017-10-31,partial,2017-10-31
+2017-10-31,01450    Productos En Mal Estado,Inventario 01450    Productos En Mal Estado 2017-10-31,partial,2017-10-31
+2017-10-31,014Ba    Bodega De Vendedores Y/O Distribuidores,Inventario 014Ba    Bodega De Vendedores Y/O Distribuidores 2017-10-31,partial,2017-10-31

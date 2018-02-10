@@ -1,0 +1,10 @@
+relation,name,model,required,readonly,id
+False,create_date,stock.inventory.line,False,False,6762
+stock.location,location_id,stock.inventory.line,True,False,6750
+False,prodlot_name,stock.inventory.line,False,False,6754
+False,product_barcode,stock.inventory.line,False,False,8950
+False,product_code,stock.inventory.line,False,False,6747
+product.product,product_id,stock.inventory.line,True,False,6745
+False,product_qty,stock.inventory.line,False,False,6749
+product.uom,product_uom_id,stock.inventory.line,True,False,6748
+False,write_date,stock.inventory.line,False,False,6764

@@ -1,0 +1,197 @@
+seq,field,type,src,dest,company_id
+105,account_id,value,140501,140505,Lacteos Del Cesar S.A.
+106,account_id,value,140502,140510,Lacteos Del Cesar S.A.
+110,account_id,value,143510,143505,Lacteos Del Cesar S.A.
+111,account_id,value,143515,143505,Lacteos Del Cesar S.A.
+112,account_id,value,145501,145525,Lacteos Del Cesar S.A.
+113,account_id,value,145502,145565,Lacteos Del Cesar S.A.
+114,account_id,value,145503,145555,Lacteos Del Cesar S.A.
+115,account_id,value,145504,145570,Lacteos Del Cesar S.A.
+116,account_id,value,145506,145575,Lacteos Del Cesar S.A.
+117,account_id,value,145508,145580,Lacteos Del Cesar S.A.
+118,account_id,value,145512,145585,Lacteos Del Cesar S.A.
+125,account_id,value,146001,146005,Lacteos Del Cesar S.A.
+126,account_id,value,146501,146505,Lacteos Del Cesar S.A.
+127,account_id,value,146502,146505,Lacteos Del Cesar S.A.
+129,account_id,value,149590,146595,Lacteos Del Cesar S.A.
+130,account_id,value,14102001,143020,Lacteos Del Cesar S.A.
+137,account_id,value,158801,158805,Lacteos Del Cesar S.A.
+140,account_id,value,159236,159235,Lacteos Del Cesar S.A.
+141,account_id,value,159237,159235,Lacteos Del Cesar S.A.
+142,account_id,value,159238,159235,Lacteos Del Cesar S.A.
+145,account_id,value,163501,163505,Lacteos Del Cesar S.A.
+152,account_id,value,210511,210510,Lacteos Del Cesar S.A.
+153,account_id,value,211506,211505,Lacteos Del Cesar S.A.
+156,account_id,value,236506,236595,Lacteos Del Cesar S.A.
+157,account_id,value,236585,236575,Lacteos Del Cesar S.A.
+158,account_id,value,236601,236570,Lacteos Del Cesar S.A.
+159,account_id,value,236701,236705,Lacteos Del Cesar S.A.
+160,account_id,value,236703,236705,Lacteos Del Cesar S.A.
+161,account_id,value,236801,236805,Lacteos Del Cesar S.A.
+162,account_id,value,236802,236805,Lacteos Del Cesar S.A.
+163,account_id,value,236803,236805,Lacteos Del Cesar S.A.
+164,account_id,value,236804,236805,Lacteos Del Cesar S.A.
+165,account_id,value,236806,236805,Lacteos Del Cesar S.A.
+169,account_id,value,240801,240805,Lacteos Del Cesar S.A.
+170,account_id,value,240802,240805,Lacteos Del Cesar S.A.
+171,account_id,value,240810,240805,Lacteos Del Cesar S.A.
+172,account_id,value,241005,249595,Lacteos Del Cesar S.A.
+173,account_id,value,241010,249595,Lacteos Del Cesar S.A.
+175,account_id,value,244801,244805,Lacteos Del Cesar S.A.
+176,account_id,value,244802,244805,Lacteos Del Cesar S.A.
+177,account_id,value,251001,251005,Lacteos Del Cesar S.A.
+179,account_id,value,259501,259505,Lacteos Del Cesar S.A.
+180,account_id,value,2605 F,260595,Lacteos Del Cesar S.A.
+181,account_id,value,2610 F,261095,Lacteos Del Cesar S.A.
+184,account_id,value,271215,271505,Lacteos Del Cesar S.A.
+185,account_id,value,271218,272595,Lacteos Del Cesar S.A.
+187,account_id,value,371504,371505,Lacteos Del Cesar S.A.
+188,account_id,value,371516,371515,Lacteos Del Cesar S.A.
+189,account_id,value,371517,371520,Lacteos Del Cesar S.A.
+190,account_id,value,371518,371525,Lacteos Del Cesar S.A.
+198,account_id,value,413595,413514,Lacteos Del Cesar S.A.
+199,account_id,value,417501,417505,Lacteos Del Cesar S.A.
+200,account_id,value,417502,417505,Lacteos Del Cesar S.A.
+205,account_id,value,481212,470530,Lacteos Del Cesar S.A.
+206,account_id,value,510516,510515,Lacteos Del Cesar S.A.
+207,account_id,value,510530,510515,Lacteos Del Cesar S.A.
+208,account_id,value,510543,510542,Lacteos Del Cesar S.A.
+209,account_id,value,510546,510545,Lacteos Del Cesar S.A.
+210,account_id,value,510547,510545,Lacteos Del Cesar S.A.
+211,account_id,value,510550,510545,Lacteos Del Cesar S.A.
+212,account_id,value,510552,510512,Lacteos Del Cesar S.A.
+214,account_id,value,510568,510571,Lacteos Del Cesar S.A.
+218,account_id,value,513086,513085,Lacteos Del Cesar S.A.
+220,account_id,value,513511,513515,Lacteos Del Cesar S.A.
+221,account_id,value,514528,514530,Lacteos Del Cesar S.A.
+222,account_id,value,520543,520542,Lacteos Del Cesar S.A.
+223,account_id,value,520546,520545,Lacteos Del Cesar S.A.
+224,account_id,value,520547,520545,Lacteos Del Cesar S.A.
+225,account_id,value,520549,520545,Lacteos Del Cesar S.A.
+226,account_id,value,520552,520512,Lacteos Del Cesar S.A.
+230,account_id,value,523086,523085,Lacteos Del Cesar S.A.
+233,account_id,value,523511,523515,Lacteos Del Cesar S.A.
+234,account_id,value,523551,523550,Lacteos Del Cesar S.A.
+249,account_id,value,531521,531520,Lacteos Del Cesar S.A.
+250,account_id,value,531523,531520,Lacteos Del Cesar S.A.
+251,account_id,value,531525,531520,Lacteos Del Cesar S.A.
+264,account_id,value,723506,720595,Lacteos Del Cesar S.A.
+265,account_id,value,720547,720545,Lacteos Del Cesar S.A.
+266,account_id,value,720516,720515,Lacteos Del Cesar S.A.
+275,account_id,value,730543,730542,Lacteos Del Cesar S.A.
+284,account_id,value,739805,739595,Lacteos Del Cesar S.A.
+289,account_id,value,869510,860595,Lacteos Del Cesar S.A.
+290,account_id,value,869511,860595,Lacteos Del Cesar S.A.
+291,account_id,value,869516,860595,Lacteos Del Cesar S.A.
+292,account_id,value,869518,860595,Lacteos Del Cesar S.A.
+293,account_id,value,941295,930595,Lacteos Del Cesar S.A.
+295,group_id,field,sel_groups_37_38_39,sel_groups_18_19_20,Lacteos Del Cesar S.A.
+296,group_id,field,sel_groups_1_2,sel_groups_1_2,Lacteos Del Cesar S.A.
+297,group_id,field,sel_groups_45_46,sel_groups_45_46,Lacteos Del Cesar S.A.
+298,group_id,field,in_group_21,in_group_33,Lacteos Del Cesar S.A.
+299,group_id,field,in_group_42,in_group_42,Lacteos Del Cesar S.A.
+300,group_id,field,in_group_43,in_group_43,Lacteos Del Cesar S.A.
+301,group_id,field,in_group_3,in_group_3,Lacteos Del Cesar S.A.
+302,group_id,field,in_group_19,in_group_31,Lacteos Del Cesar S.A.
+303,group_id,field,in_group_20,in_group_32,Lacteos Del Cesar S.A.
+304,group_id,field,sel_groups_15_16,sel_groups_27_28,Lacteos Del Cesar S.A.
+305,group_id,field,sel_groups_77_78,sel_groups_75_76,Lacteos Del Cesar S.A.
+306,group_id,field,in_group_4,in_group_4,Lacteos Del Cesar S.A.
+307,group_id,field,in_group_5,in_group_5,Lacteos Del Cesar S.A.
+308,group_id,field,in_group_6,in_group_6,Lacteos Del Cesar S.A.
+309,group_id,field,sel_groups_17_18,sel_groups_29_30,Lacteos Del Cesar S.A.
+310,group_id,field,sel_groups_54_55,sel_groups_52_53,Lacteos Del Cesar S.A.
+311,group_id,field,sel_groups_70_71,sel_groups_68_69,Lacteos Del Cesar S.A.
+312,group_id,field,sel_groups_45_46,sel_groups_45_46,Lacteos Del Cesar S.A.
+313,group_id,field,sel_groups_10_11,sel_groups_23_24,Lacteos Del Cesar S.A.
+314,group_id,field,sel_groups_79_80,sel_groups_77_78,Lacteos Del Cesar S.A.
+315,group_id,field,sel_groups_23,sel_groups_35,Lacteos Del Cesar S.A.
+316,group_id,field,in_group_7,in_group_7,Lacteos Del Cesar S.A.
+317,group_id,field,in_group_8,in_group_8,Lacteos Del Cesar S.A.
+318,group_id,field,in_group_9,in_group_9,Lacteos Del Cesar S.A.
+319,group_id,field,sel_groups_94_95,sel_groups_94_95,Lacteos Del Cesar S.A.
+320,group_id,field,sel_groups_83_84,sel_groups_81_82,Lacteos Del Cesar S.A.
+321,group_id,field,sel_groups_47_48,sel_groups_47_48,Lacteos Del Cesar S.A.
+322,group_id,field,in_group_96,in_group_96,Lacteos Del Cesar S.A.
+323,group_id,field,sel_groups_85_86,sel_group_83_84,Lacteos Del Cesar S.A.
+324,group_id,field,in_group_86,sel_groups_83_84,Lacteos Del Cesar S.A.
+325,group_id,field,in_group_103,sel_groups_96,Lacteos Del Cesar S.A.
+326,group_id,field,sel_groups_50_51,sel_groups_92_93,Lacteos Del Cesar S.A.
+327,group_id,field,sel_groups_51,sel_groups_92_93,Lacteos Del Cesar S.A.
+328,group_id,field,sel_groups_56_57,sel_groups_54_55,Lacteos Del Cesar S.A.
+329,group_id,field,sel_groups_57,sel_groups_29_30,Lacteos Del Cesar S.A.
+330,group_id,field,in_group_92,in_group_90,Lacteos Del Cesar S.A.
+331,group_id,field,in_group_93,in_group_91,Lacteos Del Cesar S.A.
+332,group_id,field,sel_groups_32_33_34,sel_groups_37_38_39,Lacteos Del Cesar S.A.
+333,group_id,field,sel_groups_35_36,sel_groups_40_41,Lacteos Del Cesar S.A.
+334,group_id,field,in_group_14,in_group_10,Lacteos Del Cesar S.A.
+335,group_id,field,in_group_24,in_group_36,Lacteos Del Cesar S.A.
+336,group_id,field,in_group_25,in_group_11,Lacteos Del Cesar S.A.
+337,group_id,field,in_group_26,in_group_12,Lacteos Del Cesar S.A.
+338,group_id,field,in_group_27,in_group_13,Lacteos Del Cesar S.A.
+339,group_id,field,in_group_28,in_group_14,Lacteos Del Cesar S.A.
+340,group_id,field,in_group_29,in_group_15,Lacteos Del Cesar S.A.
+341,group_id,field,in_group_30,in_group_16,Lacteos Del Cesar S.A.
+342,group_id,field,in_group_31,in_group_17,Lacteos Del Cesar S.A.
+343,group_id,field,in_group_40,in_group_21,Lacteos Del Cesar S.A.
+344,group_id,field,in_group_41,in_group_22,Lacteos Del Cesar S.A.
+345,group_id,field,in_group_44,in_group_44,Lacteos Del Cesar S.A.
+346,group_id,field,in_group_49,in_group_49,Lacteos Del Cesar S.A.
+347,group_id,field,in_group_52,in_group_50,Lacteos Del Cesar S.A.
+348,group_id,field,in_group_53,in_group_51,Lacteos Del Cesar S.A.
+349,group_id,field,in_group_59,in_group_57,Lacteos Del Cesar S.A.
+350,group_id,field,in_group_60,in_group_58,Lacteos Del Cesar S.A.
+351,group_id,field,in_group_61,in_group_59,Lacteos Del Cesar S.A.
+352,group_id,field,in_group_62,in_group_60,Lacteos Del Cesar S.A.
+353,group_id,field,in_group_63,in_group_61,Lacteos Del Cesar S.A.
+354,group_id,field,in_group_64,in_group_62,Lacteos Del Cesar S.A.
+355,group_id,field,in_group_65,in_group_63,Lacteos Del Cesar S.A.
+356,group_id,field,in_group_66,in_group_64,Lacteos Del Cesar S.A.
+357,group_id,field,in_group_67,in_group_65,Lacteos Del Cesar S.A.
+358,group_id,field,in_group_68,in_group_66,Lacteos Del Cesar S.A.
+359,group_id,field,in_group_69,in_group_67,Lacteos Del Cesar S.A.
+360,group_id,field,in_group_72,in_group_70,Lacteos Del Cesar S.A.
+361,group_id,field,in_group_73,in_group_71,Lacteos Del Cesar S.A.
+362,group_id,field,in_group_74,in_group_72,Lacteos Del Cesar S.A.
+363,group_id,field,in_group_75,in_group_73,Lacteos Del Cesar S.A.
+364,group_id,field,in_group_76,in_group_74,Lacteos Del Cesar S.A.
+365,group_id,field,in_group_81,in_group_79,Lacteos Del Cesar S.A.
+366,group_id,field,in_group_82,in_group_80,Lacteos Del Cesar S.A.
+367,group_id,field,in_group_87,in_group_85,Lacteos Del Cesar S.A.
+368,group_id,field,in_group_88,in_group_86,Lacteos Del Cesar S.A.
+369,group_id,field,in_group_89,in_group_87,Lacteos Del Cesar S.A.
+370,group_id,field,in_group_90,in_group_88,Lacteos Del Cesar S.A.
+371,group_id,field,in_group_91,in_group_89,Lacteos Del Cesar S.A.
+372,group_id,field,sel_groups_58,sel_groups_56,Lacteos Del Cesar S.A.
+373,group_id,field,sel_groups_12_13,sel_groups_25_26,Lacteos Del Cesar S.A.
+374,journal_id,value,Desembolsos,Open,Lacteos Del Cesar S.A.
+375,journal_id,value,Liquidas,Debit,Lacteos Del Cesar S.A.
+376,journal_id,value,Pagos,Credit,Lacteos Del Cesar S.A.
+377,journal_id,value,Diario de Ventas,Customer Invoices,Lacteos Del Cesar S.A.
+378,journal_id,value,Diario de Compras,Vendor Bills,Lacteos Del Cesar S.A.
+379,journal_id,value,FONDO COLATERAL,Miscellaneous operations,Lacteos Del Cesar S.A.
+380,journal_id,value,COMPROBANTE DE CONTABILIDAD,Miscellaneous operations,Lacteos Del Cesar S.A.
+381,journal_id,value,Diario asientos de apertura,Miscellaneous operations,Lacteos Del Cesar S.A.
+382,journal_id,value,CUENTA CORRIENTE -  ALTAVAL,Miscellaneous operations,Lacteos Del Cesar S.A.
+383,journal_id,value,CUENTA CORRIENTE SUMA,Miscellaneous operations,Lacteos Del Cesar S.A.
+384,journal_id,value,P_Liquidas,Auxiliar Debit,Lacteos Del Cesar S.A.
+385,journal_id,value,P_Pagos,Auxiliar Credit,Lacteos Del Cesar S.A.
+386,journal_id,value,Recaudos,Collect,Lacteos Del Cesar S.A.
+387,journal_id,value,P_Pagos Extras,Auxiliar Extra Debit,Lacteos Del Cesar S.A.
+388,journal_id,value,P_Liquidas Extras,Auxiliar Extra Credit,Lacteos Del Cesar S.A.
+389,journal_id,value,Paga,Payment,Lacteos Del Cesar S.A.
+390,journal_id,value,Factura Equivalente,Other Bills,Lacteos Del Cesar S.A.
+391,journal_id,value,Liquidas Extras,Extra Debit,Lacteos Del Cesar S.A.
+392,journal_id,value,Pagos Extras,Extra Credit,Lacteos Del Cesar S.A.
+393,journal_id,value,Reclamo,Claim,Lacteos Del Cesar S.A.
+394,journal_id,value,Retanqueo,Surcharge,Lacteos Del Cesar S.A.
+395,journal_id,value,Caja Menor SUMA,Cash,Lacteos Del Cesar S.A.
+396,journal_id,value,Caja Menor Altaval,Cash,Lacteos Del Cesar S.A.
+397,journal_id,value,Venta Cartera,Inversor Invoices,Lacteos Del Cesar S.A.
+398,journal_id,value,recompra inversionista,Inversor Bills,Lacteos Del Cesar S.A.
+399,journal_id,value,Compra Cartera,Inversor Bills,Lacteos Del Cesar S.A.
+400,journal_id,value,Juridico,Legal Credit,Lacteos Del Cesar S.A.
+401,journal_id,value,Nomina,Payroll,Lacteos Del Cesar S.A.
+402,journal_id,value,Provisiones,Miscellaneous operations,Lacteos Del Cesar S.A.
+403,journal_id,value,Ajustes,Miscellaneous operations,Lacteos Del Cesar S.A.
+404,journal_id,value,AjustesA,Miscellaneous operations,Lacteos Del Cesar S.A.
