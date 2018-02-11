@@ -40,7 +40,7 @@ SOCK_11, UID_11 = connectOdooWebServices(
     URL_11, DB_11, USERNAME_11, PASSWORD_11)
 
 print("leyendo cvs")
-with open("DATA/Datos/" + model[0] + '.csv', encoding="ISO-8859-1") as csvfile:
+with open("DATA/Datos/" + model[0] + '.csv') as csvfile:
     records = csv.DictReader(csvfile)
     for record in records:
         accounting_date = record['accounting_date']

@@ -326,6 +326,11 @@ def main():
     USERNAME_11 = 'admin'
     PASSWORD_11 = '0doo.admin'
 
+    # URL_11 = "https://klarens-staging-21426.dev.odoo.com"
+    # DB_11 = "klarens-staging-21426"
+    # USERNAME_11 = 'admin'
+    # PASSWORD_11 = '0doo.admin'
+
     URL_10 = "http://vallenata.test.3rp.la"
     DB_10 = "vallenata"
     USERNAME_10 = '3rp'
@@ -345,7 +350,7 @@ def main():
     # models_11 = [{'model': 'hr.job'}, {'model': 'hr.employee'}, {'model': 'hr.department'}]
     # models_11 = [{'model': 'hr.department'}]
     # , {'model': 'account.move.line'}]
-    models_11 = [{'model': 'account.move'}]
+    models_11 = [{'model': 'account.ciiu.lines'}]
 
     # i = 0
     # while i < len(models_11):

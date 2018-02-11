@@ -18,7 +18,7 @@ def connectOdooWebServices(URL_11, DB_11, USERNAME_11, PASSWORD_11):
 
 
 def saveAttributes(FIELDS_RECORDS, name):
-    with open(name, 'w') as csvfile:
+    with open(name, 'w', encoding="ISO-8859-1") as csvfile:
         fieldnames = list(FIELDS_RECORDS[0].keys())
         writer = csv.DictWriter(
             csvfile, fieldnames=fieldnames)
@@ -31,10 +31,10 @@ print("conectando datos...")
 SOCK_11, UID_11 = connectOdooWebServices(
     URL_11, DB_11, USERNAME_11, PASSWORD_11)
 
-model = "stock.inventory.line"
+model = "hr.employee"
 
 FIELDS_RECORDS = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'ir.model.fields', 'search_read', [
-                                    ['&', ('model', '=', model),'&',('readonly','=',False), '|', ('required', '=', True), ('relation', '=', False)]], {'fields': ['model', 'name', 'relation', 'readonly', 'required']})
+                                    ['&', ('model', '=', model), ('readonly', '=', False)]], {'fields': ['model', 'name', 'relation', 'readonly', 'required']})
 
 # FIELDS_RECORDS = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'res.partner', 'search_read',
 #                                     [[['vat', '=', '892301290']]], {'fields': ['name']})
