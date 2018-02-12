@@ -27,18 +27,24 @@ def saveAttributes(FIELDS_RECORDS, name):
             writer.writerow(record)
 
 
-print("conectando datos...")
 SOCK_11, UID_11 = connectOdooWebServices(
     URL_11, DB_11, USERNAME_11, PASSWORD_11)
-
-model = "res.country.state.city"
-
-# FIELDS_RECORDS = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'ir.model.fields', 'search_read', [
-#                                    ['&', ('model', '=', model), ('readonly', '=', False)]], {'fields': ['model', 'name', 'relation', 'readonly', 'required']})
-
-FIELDS_RECORDS = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'res.country.state.city', 'search_read',
-                                    [[]], {'fields': ['name']})
-
-saveAttributes(FIELDS_RECORDS, "prueba.atributtes.csv")
-print(FIELDS_RECORDS)
-exit()
+model = 'res.partner'
+errors = []
+print('leyendo. . .')
+with open("DATA/Eliminate_Data/" + model + '.csv', encoding="ISO-8859-1") as infile:
+    read_records = csv.reader(infile)
+    count = 0
+    for record in read_records:
+        if count < 1:
+            count += 1
+        else:
+            FIELDS_RECORDS = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'res.partner', 'search_read', [
+                [('vat', '=', record)]], {'fields': ['name', 'vat']})
+            for ids in FIELDS_RECORDS:
+                try:
+                    error = SOCK_11.execute_kw(
+                        DB_11, UID_11, PASSWORD_11, 'res.partner', 'unlink', [[ids['id']]])
+                except:
+                    errors.append(ids)
+saveAttributes(errors, 'errors_respartner')

@@ -138,7 +138,21 @@ def my_export(url_origin, db_origin, username_origin, password_origin, url_desti
         i += 1
 
 
+def actualizate():
+    ids = []
+    vats = []
+    with open('errors_respartner', encoding="ISO-8859-1") as csvfile:
+        records = csv.reader(csvfile)
+        for record in records:
+            ids.append(record[0])
+            vats.append(record[2])
+    return ids, vats
+
+
 def migrate(file, model, sock, db, uid, password):
+    # Temporal
+    ids, vats = actualizate()
+    #####
     all_errors = []
     sizeDocument = os.path.getsize("DATA/" + file + "/" + model + '.csv')
     with open("DATA/" + file + "/" + model + '.csv', encoding="ISO-8859-1") as csvfile:
@@ -174,6 +188,10 @@ def migrate(file, model, sock, db, uid, password):
             else:
                 record_to_migrate = []
                 record_to_migrate.append(record)
+                position = attributes.index()
+                if record[position] in vats:
+                    attributes.append('id/.id')
+                    record_to_migrate.append(ids[vats.index(record[position])])
                 data = [attributes, record_to_migrate]
                 errors = sock.execute_kw(
                     db, uid, password, model, 'load', data)

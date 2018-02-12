@@ -1,77 +1,1121 @@
-model,relation,id,readonly,name,required
-hr.employee,False,3164,False,active,False
-hr.employee,res.partner,3165,False,address_home_id,False
-hr.employee,res.partner,3182,False,address_id,False
-hr.employee,False,9381,False,appraisal_by_collaborators,False
-hr.employee,False,9375,False,appraisal_by_colleagues,False
-hr.employee,False,9372,False,appraisal_by_manager,False
-hr.employee,hr.employee,9382,False,appraisal_collaborators_ids,False
-hr.employee,survey.survey,9383,False,appraisal_collaborators_survey_id,False
-hr.employee,hr.employee,9376,False,appraisal_colleagues_ids,False
-hr.employee,survey.survey,9377,False,appraisal_colleagues_survey_id,False
-hr.employee,False,9371,False,appraisal_date,False
-hr.employee,False,9379,False,appraisal_employee,False
-hr.employee,False,9386,False,appraisal_frequency,False
-hr.employee,False,9387,False,appraisal_frequency_unit,False
-hr.employee,hr.employee,9373,False,appraisal_manager_ids,False
-hr.employee,survey.survey,9374,False,appraisal_manager_survey_id,False
-hr.employee,False,9378,False,appraisal_self,False
-hr.employee,survey.survey,9380,False,appraisal_self_survey_id,False
-hr.employee,hr.attendance,5945,False,attendance_ids,False
-hr.employee,res.partner.bank,3175,False,bank_account_id,False
-hr.employee,False,5943,False,barcode,False
-hr.employee,False,3170,False,birthday,False
-hr.employee,hr.employee.category,3192,False,category_ids,False
-hr.employee,hr.employee,3190,False,child_ids,False
-hr.employee,False,5952,False,children,False
-hr.employee,hr.employee,3191,False,coach_id,False
-hr.employee,False,3194,False,color,False
-hr.employee,res.company,3206,False,company_id,False
-hr.employee,hr.contract,5955,False,contract_ids,False
-hr.employee,res.country,3167,False,country_id,False
-hr.employee,False,3211,False,create_date,False
-hr.employee,res.users,3210,False,create_uid,False
-hr.employee,hr.department,3188,False,department_id,False
-hr.employee,gamification.badge.user,6008,False,direct_badge_ids,False
-hr.employee,False,3168,False,gender,False
-hr.employee,False,3173,False,identification_id,False
-hr.employee,False,3179,False,image,False
-hr.employee,False,3180,False,image_medium,False
-hr.employee,False,3181,False,image_small,False
-hr.employee,hr.job,3187,False,job_id,False
-hr.employee,False,5949,False,manager,False
-hr.employee,False,5948,False,manual_attendance,False
-hr.employee,False,3169,False,marital,False
-hr.employee,False,5950,False,medic_exam,False
-hr.employee,mail.followers,3197,False,message_follower_ids,False
-hr.employee,mail.message,3200,False,message_ids,False
-hr.employee,False,3201,False,message_last_post,False
-hr.employee,False,3184,False,mobile_phone,False
-hr.employee,False,3162,False,name,False
-hr.employee,False,3193,False,notes,False
-hr.employee,hr.employee,3189,False,parent_id,False
-hr.employee,False,3174,False,passport_id,False
-hr.employee,False,9384,False,periodic_appraisal,False
-hr.employee,False,9385,False,periodic_appraisal_created,False
-hr.employee,False,3176,False,permit_no,False
-hr.employee,False,5944,False,pin,False
-hr.employee,False,5951,False,place_of_birth,False
-hr.employee,False,6017,False,remaining_leaves,False
-hr.employee,resource.calendar,3207,False,resource_calendar_id,False
-hr.employee,resource.resource,3195,False,resource_id,True
-hr.employee,False,3172,False,sinid,False
-hr.employee,False,3171,False,ssnid,False
-hr.employee,False,10993,False,timesheet_cost,False
-hr.employee,res.users,10101,False,timesheet_manager_id,False
-hr.employee,False,10100,False,timesheet_validated,False
-hr.employee,res.users,3163,False,user_id,False
-hr.employee,False,5953,False,vehicle,False
-hr.employee,False,5954,False,vehicle_distance,False
-hr.employee,False,3178,False,visa_expire,False
-hr.employee,False,3177,False,visa_no,False
-hr.employee,mail.message,3685,False,website_message_ids,False
-hr.employee,False,3185,False,work_email,False
-hr.employee,False,3186,False,work_location,False
-hr.employee,False,3183,False,work_phone,False
-hr.employee,False,3213,False,write_date,False
-hr.employee,res.users,3212,False,write_uid,False
+name,id
+Medellin,1
+Abejorral,2
+Abriaqui,3
+Alejandria,4
+Amaga,5
+Amalfi,6
+Andes,7
+Angelopolis,8
+Angostura,9
+Anori,10
+Santafe De Antioquia,11
+Anza,12
+Apartado,13
+Arboletes,14
+Argelia,15
+Armenia,16
+Barbosa,17
+Belmira,18
+Bello,19
+Betania,20
+Betulia,21
+Ciudad Bolivar,22
+Briceño,23
+Buritica,24
+Caceres,25
+Caicedo,26
+Caldas,27
+Campamento,28
+Cañasgordas,29
+Caracoli,30
+Caramanta,31
+Carepa,32
+El Carmen De Viboral,33
+Carolina,34
+Caucasia,35
+Chigorodo,36
+Cisneros,37
+Cocorna,38
+Concepcion,39
+Concordia,40
+Copacabana,41
+Dabeiba,42
+Don Matias,43
+Ebejico,44
+El Bagre,45
+Entrerrios,46
+Envigado,47
+Fredonia,48
+Frontino,49
+Giraldo,50
+Girardota,51
+Gomez Plata,52
+Granada,53
+Guadalupe,54
+Guarne,55
+Guatape,56
+Heliconia,57
+Hispania,58
+Itagui,59
+Ituango,60
+Jardin,61
+Jerico,62
+La Ceja,63
+La Estrella,64
+La Pintada,65
+La Union,66
+Liborina,67
+Maceo,68
+Marinilla,69
+Montebello,70
+Murindo,71
+Mutata,72
+Nariño,73
+Necocli,74
+Nechi,75
+Olaya,76
+Peñol,77
+Peque,78
+Pueblorrico,79
+Puerto Berrio,80
+Puerto Nare,81
+Puerto Triunfo,82
+Remedios,83
+Retiro,84
+Rionegro,85
+Sabanalarga,86
+Sabaneta,87
+Salgar,88
+San Andres De Cuerquia,89
+San Carlos,90
+San Francisco,91
+San Jeronimo,92
+San Jose De La Montaña,93
+San Juan De Uraba,94
+San Luis,95
+San Pedro,96
+San Pedro De Uraba,97
+San Rafael,98
+San Roque,99
+San Vicente,100
+Santa Barbara,101
+Santa Rosa De Osos,102
+Santo Domingo,103
+El Santuario,104
+Segovia,105
+Sonson,106
+Sopetran,107
+Tamesis,108
+Taraza,109
+Tarso,110
+Titiribi,111
+Toledo,112
+Turbo,113
+Uramita,114
+Urrao,115
+Valdivia,116
+Valparaiso,117
+Vegachi,118
+Venecia,119
+Vigia Del Fuerte,120
+Yali,121
+Yarumal,122
+Yolombo,123
+Yondo,124
+Zaragoza,125
+Barranquilla,126
+Baranoa,127
+Campo De La Cruz,128
+Candelaria,129
+Galapa,130
+Juan De Acosta,131
+Luruaco,132
+Malambo,133
+Manati,134
+Palmar De Varela,135
+Piojo,136
+Polonuevo,137
+Ponedera,138
+Puerto Colombia,139
+Repelon,140
+Sabanagrande,141
+Sabanalarga,142
+Santa Lucia,143
+Santo Tomas,144
+Soledad,145
+Suan,146
+Tubara,147
+Usiacuri,148
+"Bogota, D.C.",149
+Cartagena,150
+Achi,151
+Altos Del Rosario,152
+Arenal,153
+Arjona,154
+Arroyohondo,155
+Barranco De Loba,156
+Calamar,157
+Cantagallo,158
+Cicuco,159
+Cordoba,160
+Clemencia,161
+El Carmen De Bolivar,162
+El Guamo,163
+El Peñon,164
+Hatillo De Loba,165
+Magangue,166
+Mahates,167
+Margarita,168
+Maria La Baja,169
+Montecristo,170
+Mompos,171
+Norosi,172
+Morales,173
+Pinillos,174
+Regidor,175
+Rio Viejo,176
+San Cristobal,177
+San Estanislao,178
+San Fernando,179
+San Jacinto,180
+San Jacinto Del Cauca,181
+San Juan Nepomuceno,182
+San Martin De Loba,183
+San Pablo,184
+Santa Catalina,185
+Santa Rosa,186
+Santa Rosa Del Sur,187
+Simiti,188
+Soplaviento,189
+Talaigua Nuevo,190
+Tiquisio,191
+Turbaco,192
+Turbana,193
+Villanueva,194
+Zambrano,195
+Tunja,196
+Almeida,197
+Aquitania,198
+Arcabuco,199
+Belen,200
+Berbeo,201
+Beteitiva,202
+Boavita,203
+Boyaca,204
+Briceño,205
+Buenavista,206
+Busbanza,207
+Caldas,208
+Campohermoso,209
+Cerinza,210
+Chinavita,211
+Chiquinquira,212
+Chiscas,213
+Chita,214
+Chitaraque,215
+Chivata,216
+Cienega,217
+Combita,218
+Coper,219
+Corrales,220
+Covarachia,221
+Cubara,222
+Cucaita,223
+Cuitiva,224
+Chiquiza,225
+Chivor,226
+Duitama,227
+El Cocuy,228
+El Espino,229
+Firavitoba,230
+Floresta,231
+Gachantiva,232
+Gameza,233
+Garagoa,234
+Guacamayas,235
+Guateque,236
+Guayata,237
+Gsican,238
+Iza,239
+Jenesano,240
+Jerico,241
+Labranzagrande,242
+La Capilla,243
+La Victoria,244
+La Uvita,245
+Villa De Leyva,246
+Macanal,247
+Maripi,248
+Miraflores,249
+Mongua,250
+Mongui,251
+Moniquira,252
+Motavita,253
+Muzo,254
+Nobsa,255
+Nuevo Colon,256
+Oicata,257
+Otanche,258
+Pachavita,259
+Paez,260
+Paipa,261
+Pajarito,262
+Panqueba,263
+Pauna,264
+Paya,265
+Paz De Rio,266
+Pesca,267
+Pisba,268
+Puerto Boyaca,269
+Quipama,270
+Ramiriqui,271
+Raquira,272
+Rondon,273
+Saboya,274
+Sachica,275
+Samaca,276
+San Eduardo,277
+San Jose De Pare,278
+San Luis De Gaceno,279
+San Mateo,280
+San Miguel De Sema,281
+San Pablo De Borbur,282
+Santana,283
+Santa Maria,284
+Santa Rosa De Viterbo,285
+Santa Sofia,286
+Sativanorte,287
+Sativasur,288
+Siachoque,289
+Soata,290
+Socota,291
+Socha,292
+Sogamoso,293
+Somondoco,294
+Sora,295
+Sotaquira,296
+Soraca,297
+Susacon,298
+Sutamarchan,299
+Sutatenza,300
+Tasco,301
+Tenza,302
+Tibana,303
+Tibasosa,304
+Tinjaca,305
+Tipacoque,306
+Toca,307
+Togsi,308
+Topaga,309
+Tota,310
+Tunungua,311
+Turmeque,312
+Tuta,313
+Tutaza,314
+Umbita,315
+Ventaquemada,316
+Viracacha,317
+Zetaquira,318
+Manizales,319
+Aguadas,320
+Anserma,321
+Aranzazu,322
+Belalcazar,323
+Chinchina,324
+Filadelfia,325
+La Dorada,326
+La Merced,327
+Manzanares,328
+Marmato,329
+Marquetalia,330
+Marulanda,331
+Neira,332
+Norcasia,333
+Pacora,334
+Palestina,335
+Pensilvania,336
+Riosucio,337
+Risaralda,338
+Salamina,339
+Samana,340
+San Jose,341
+Supia,342
+Victoria,343
+Villamaria,344
+Viterbo,345
+Florencia,346
+Albania,347
+Belen De Los Andaquies,348
+Cartagena Del Chaira,349
+Curillo,350
+El Doncello,351
+El Paujil,352
+La Montañita,353
+Milan,354
+Morelia,355
+Puerto Rico,356
+San Jose Del Fragua,357
+San Vicente Del Caguan,358
+Solano,359
+Solita,360
+Valparaiso,361
+Popayan,362
+Almaguer,363
+Argelia,364
+Balboa,365
+Bolivar,366
+Buenos Aires,367
+Cajibio,368
+Caldono,369
+Caloto,370
+Corinto,371
+El Tambo,372
+Florencia,373
+Guachene,374
+Guapi,375
+Inza,376
+Jambalo,377
+La Sierra,378
+La Vega,379
+Lopez,380
+Mercaderes,381
+Miranda,382
+Morales,383
+Padilla,384
+Paez,385
+Patia,386
+Piamonte,387
+Piendamo,388
+Puerto Tejada,389
+Purace,390
+Rosas,391
+San Sebastian,392
+Santander De Quilichao,393
+Santa Rosa,394
+Silvia,395
+Sotara,396
+Suarez,397
+Sucre,398
+Timbio,399
+Timbiqui,400
+Toribio,401
+Totoro,402
+Villa Rica,403
+Valledupar,404
+Aguachica,405
+Agustin Codazzi,406
+Astrea,407
+Becerril,408
+Bosconia,409
+Chimichagua,410
+Chiriguana,411
+Curumani,412
+El Copey,413
+El Paso,414
+Gamarra,415
+Gonzalez,416
+La Gloria,417
+La Jagua De Ibirico,418
+Manaure,419
+Pailitas,420
+Pelaya,421
+Pueblo Bello,422
+Rio De Oro,423
+La Paz,424
+San Alberto,425
+San Diego,426
+San Martin,427
+Tamalameque,428
+Monteria,429
+Ayapel,430
+Buenavista,431
+Canalete,432
+Cerete,433
+Chima,434
+Chinu,435
+Cienaga De Oro,436
+Cotorra,437
+La Apartada,438
+Lorica,439
+Los Cordobas,440
+Momil,441
+Montelibano,442
+Moñitos,443
+Planeta Rica,444
+Pueblo Nuevo,445
+Puerto Escondido,446
+Puerto Libertador,447
+Purisima,448
+Sahagun,449
+San Andres Sotavento,450
+San Antero,451
+San Bernardo Del Viento,452
+San Carlos,453
+San Pelayo,454
+Tierralta,455
+Valencia,456
+Agua De Dios,457
+Alban,458
+Anapoima,459
+Anolaima,460
+Arbelaez,461
+Beltran,462
+Bituima,463
+Bojaca,464
+Cabrera,465
+Cachipay,466
+Cajica,467
+Caparrapi,468
+Caqueza,469
+Carmen De Carupa,470
+Chaguani,471
+Chia,472
+Chipaque,473
+Choachi,474
+Choconta,475
+Cogua,476
+Cota,477
+Cucunuba,478
+El Colegio,479
+El Peñon,480
+El Rosal,481
+Facatativa,482
+Fomeque,483
+Fosca,484
+Funza,485
+Fuquene,486
+Fusagasuga,487
+Gachala,488
+Gachancipa,489
+Gacheta,490
+Gama,491
+Girardot,492
+Granada,493
+Guacheta,494
+Guaduas,495
+Guasca,496
+Guataqui,497
+Guatavita,498
+Guayabal De Siquima,499
+Guayabetal,500
+Gutierrez,501
+Jerusalen,502
+Junin,503
+La Calera,504
+La Mesa,505
+La Palma,506
+La Peña,507
+La Vega,508
+Lenguazaque,509
+Macheta,510
+Madrid,511
+Manta,512
+Medina,513
+Mosquera,514
+Nariño,515
+Nemocon,516
+Nilo,517
+Nimaima,518
+Nocaima,519
+Venecia,520
+Pacho,521
+Paime,522
+Pandi,523
+Paratebueno,524
+Pasca,525
+Puerto Salgar,526
+Puli,527
+Quebradanegra,528
+Quetame,529
+Quipile,530
+Apulo,531
+Ricaurte,532
+San Antonio Del Tequendama,533
+San Bernardo,534
+San Cayetano,535
+San Francisco,536
+San Juan De Rio Seco,537
+Sasaima,538
+Sesquile,539
+Sibate,540
+Silvania,541
+Simijaca,542
+Soacha,543
+Sopo,544
+Subachoque,545
+Suesca,546
+Supata,547
+Susa,548
+Sutatausa,549
+Tabio,550
+Tausa,551
+Tena,552
+Tenjo,553
+Tibacuy,554
+Tibirita,555
+Tocaima,556
+Tocancipa,557
+Topaipi,558
+Ubala,559
+Ubaque,560
+Villa De San Diego De Ubate,561
+Une,562
+Utica,563
+Vergara,564
+Viani,565
+Villagomez,566
+Villapinzon,567
+Villeta,568
+Viota,569
+Yacopi,570
+Zipacon,571
+Zipaquira,572
+Quibdo,573
+Acandi,574
+Alto Baudo,575
+Atrato,576
+Bagado,577
+Bahia Solano,578
+Bajo Baudo,579
+Bojaya,580
+El Canton Del San Pablo,581
+Carmen Del Darien,582
+Certegui,583
+Condoto,584
+El Carmen De Atrato,585
+El Litoral Del San Juan,586
+Istmina,587
+Jurado,588
+Lloro,589
+Medio Atrato,590
+Medio Baudo,591
+Medio San Juan,592
+Novita,593
+Nuqui,594
+Rio Iro,595
+Rio Quito,596
+Riosucio,597
+San Jose Del Palmar,598
+Sipi,599
+Tado,600
+Unguia,601
+Union Panamericana,602
+Neiva,603
+Acevedo,604
+Agrado,605
+Aipe,606
+Algeciras,607
+Altamira,608
+Baraya,609
+Campoalegre,610
+Colombia,611
+Elias,612
+Garzon,613
+Gigante,614
+Guadalupe,615
+Hobo,616
+Iquira,617
+Isnos,618
+La Argentina,619
+La Plata,620
+Nataga,621
+Oporapa,622
+Paicol,623
+Palermo,624
+Palestina,625
+Pital,626
+Pitalito,627
+Rivera,628
+Saladoblanco,629
+San Agustin,630
+Santa Maria,631
+Suaza,632
+Tarqui,633
+Tesalia,634
+Tello,635
+Teruel,636
+Timana,637
+Villavieja,638
+Yaguara,639
+Riohacha,640
+Albania,641
+Barrancas,642
+Dibulla,643
+Distraccion,644
+El Molino,645
+Fonseca,646
+Hatonuevo,647
+La Jagua Del Pilar,648
+Maicao,649
+Manaure,650
+San Juan Del Cesar,651
+Uribia,652
+Urumita,653
+Villanueva,654
+Santa Marta,655
+Algarrobo,656
+Aracataca,657
+Ariguani,658
+Cerro San Antonio,659
+Chibolo,660
+Cienaga,661
+Concordia,662
+El Banco,663
+El Piñon,664
+El Reten,665
+Fundacion,666
+Guamal,667
+Nueva Granada,668
+Pedraza,669
+Pijiño Del Carmen,670
+Pivijay,671
+Plato,672
+Puebloviejo,673
+Remolino,674
+Sabanas De San Angel,675
+Salamina,676
+San Sebastian De Buenavista,677
+San Zenon,678
+Santa Ana,679
+Santa Barbara De Pinto,680
+Sitionuevo,681
+Tenerife,682
+Zapayan,683
+Zona Bananera,684
+Villavicencio,685
+Acacias,686
+Barranca De Upia,687
+Cabuyaro,688
+Castilla La Nueva,689
+Cubarral,690
+Cumaral,691
+El Calvario,692
+El Castillo,693
+El Dorado,694
+Fuente De Oro,695
+Granada,696
+Guamal,697
+Mapiripan,698
+Mesetas,699
+La Macarena,700
+Uribe,701
+Lejanias,702
+Puerto Concordia,703
+Puerto Gaitan,704
+Puerto Lopez,705
+Puerto Lleras,706
+Puerto Rico,707
+Restrepo,708
+San Carlos De Guaroa,709
+San Juan De Arama,710
+San Juanito,711
+San Martin,712
+Vistahermosa,713
+Pasto,714
+Alban,715
+Aldana,716
+Ancuya,717
+Arboleda,718
+Barbacoas,719
+Belen,720
+Buesaco,721
+Colon,722
+Consaca,723
+Contadero,724
+Cordoba,725
+Cuaspud,726
+Cumbal,727
+Cumbitara,728
+Chachagsi,729
+El Charco,730
+El Peñol,731
+El Rosario,732
+El Tablon De Gomez,733
+El Tambo,734
+Funes,735
+Guachucal,736
+Guaitarilla,737
+Gualmatan,738
+Iles,739
+Imues,740
+Ipiales,741
+La Cruz,742
+La Florida,743
+La Llanada,744
+La Tola,745
+La Union,746
+Leiva,747
+Linares,748
+Los Andes,749
+Magsi,750
+Mallama,751
+Mosquera,752
+Nariño,753
+Olaya Herrera,754
+Ospina,755
+Francisco Pizarro,756
+Policarpa,757
+Potosi,758
+Providencia,759
+Puerres,760
+Pupiales,761
+Ricaurte,762
+Roberto Payan,763
+Samaniego,764
+Sandona,765
+San Bernardo,766
+San Lorenzo,767
+San Pablo,768
+San Pedro De Cartago,769
+Santa Barbara,770
+Santacruz,771
+Sapuyes,772
+Taminango,773
+Tangua,774
+San Andres De Tumaco,775
+Tuquerres,776
+Yacuanquer,777
+Cucuta,778
+Abrego,779
+Arboledas,780
+Bochalema,781
+Bucarasica,782
+Cacota,783
+Cachira,784
+Chinacota,785
+Chitaga,786
+Convencion,787
+Cucutilla,788
+Durania,789
+El Carmen,790
+El Tarra,791
+El Zulia,792
+Gramalote,793
+Hacari,794
+Herran,795
+Labateca,796
+La Esperanza,797
+La Playa,798
+Los Patios,799
+Lourdes,800
+Mutiscua,801
+Ocaña,802
+Pamplona,803
+Pamplonita,804
+Puerto Santander,805
+Ragonvalia,806
+Salazar,807
+San Calixto,808
+San Cayetano,809
+Santiago,810
+Sardinata,811
+Silos,812
+Teorama,813
+Tibu,814
+Toledo,815
+Villa Caro,816
+Villa Del Rosario,817
+Armenia,818
+Buenavista,819
+Calarca,820
+Circasia,821
+Cordoba,822
+Filandia,823
+Genova,824
+La Tebaida,825
+Montenegro,826
+Pijao,827
+Quimbaya,828
+Salento,829
+Pereira,830
+Apia,831
+Balboa,832
+Belen De Umbria,833
+Dosquebradas,834
+Guatica,835
+La Celia,836
+La Virginia,837
+Marsella,838
+Mistrato,839
+Pueblo Rico,840
+Quinchia,841
+Santa Rosa De Cabal,842
+Santuario,843
+Bucaramanga,844
+Aguada,845
+Albania,846
+Aratoca,847
+Barbosa,848
+Barichara,849
+Barrancabermeja,850
+Betulia,851
+Bolivar,852
+Cabrera,853
+California,854
+Capitanejo,855
+Carcasi,856
+Cepita,857
+Cerrito,858
+Charala,859
+Charta,860
+Chima,861
+Chipata,862
+Cimitarra,863
+Concepcion,864
+Confines,865
+Contratacion,866
+Coromoro,867
+Curiti,868
+El Carmen De Chucuri,869
+El Guacamayo,870
+El Peñon,871
+El Playon,872
+Encino,873
+Enciso,874
+Florian,875
+Floridablanca,876
+Galan,877
+Gambita,878
+Giron,879
+Guaca,880
+Guadalupe,881
+Guapota,882
+Guavata,883
+Gsepsa,884
+Hato,885
+Jesus Maria,886
+Jordan,887
+La Belleza,888
+Landazuri,889
+La Paz,890
+Lebrija,891
+Los Santos,892
+Macaravita,893
+Malaga,894
+Matanza,895
+Mogotes,896
+Molagavita,897
+Ocamonte,898
+Oiba,899
+Onzaga,900
+Palmar,901
+Palmas Del Socorro,902
+Paramo,903
+Piedecuesta,904
+Pinchote,905
+Puente Nacional,906
+Puerto Parra,907
+Puerto Wilches,908
+Rionegro,909
+Sabana De Torres,910
+San Andres,911
+San Benito,912
+San Gil,913
+San Joaquin,914
+San Jose De Miranda,915
+San Miguel,916
+San Vicente De Chucuri,917
+Santa Barbara,918
+Santa Helena Del Opon,919
+Simacota,920
+Socorro,921
+Suaita,922
+Sucre,923
+Surata,924
+Tona,925
+Valle De San Jose,926
+Velez,927
+Vetas,928
+Villanueva,929
+Zapatoca,930
+Sincelejo,931
+Buenavista,932
+Caimito,933
+Coloso,934
+Corozal,935
+Coveñas,936
+Chalan,937
+El Roble,938
+Galeras,939
+Guaranda,940
+La Union,941
+Los Palmitos,942
+Majagual,943
+Morroa,944
+Ovejas,945
+Palmito,946
+Sampues,947
+San Benito Abad,948
+San Juan De Betulia,949
+San Marcos,950
+San Onofre,951
+San Pedro,952
+San Luis De Since,953
+Sucre,954
+Santiago De Tolu,955
+Tolu Viejo,956
+Ibague,957
+Alpujarra,958
+Alvarado,959
+Ambalema,960
+Anzoategui,961
+Armero,962
+Ataco,963
+Cajamarca,964
+Carmen De Apicala,965
+Casabianca,966
+Chaparral,967
+Coello,968
+Coyaima,969
+Cunday,970
+Dolores,971
+Espinal,972
+Falan,973
+Flandes,974
+Fresno,975
+Guamo,976
+Herveo,977
+Honda,978
+Icononzo,979
+Lerida,980
+Libano,981
+Mariquita,982
+Melgar,983
+Murillo,984
+Natagaima,985
+Ortega,986
+Palocabildo,987
+Piedras,988
+Planadas,989
+Prado,990
+Purificacion,991
+Rioblanco,992
+Roncesvalles,993
+Rovira,994
+Saldaña,995
+San Antonio,996
+San Luis,997
+Santa Isabel,998
+Suarez,999
+Valle De San Juan,1000
+Venadillo,1001
+Villahermosa,1002
+Villarrica,1003
+Cali,1004
+Alcala,1005
+Andalucia,1006
+Ansermanuevo,1007
+Argelia,1008
+Bolivar,1009
+Buenaventura,1010
+Guadalajara De Buga,1011
+Bugalagrande,1012
+Caicedonia,1013
+Calima,1014
+Candelaria,1015
+Cartago,1016
+Dagua,1017
+El Aguila,1018
+El Cairo,1019
+El Cerrito,1020
+El Dovio,1021
+Florida,1022
+Ginebra,1023
+Guacari,1024
+Jamundi,1025
+La Cumbre,1026
+La Union,1027
+La Victoria,1028
+Obando,1029
+Palmira,1030
+Pradera,1031
+Restrepo,1032
+Riofrio,1033
+Roldanillo,1034
+San Pedro,1035
+Sevilla,1036
+Toro,1037
+Trujillo,1038
+Tulua,1039
+Ulloa,1040
+Versalles,1041
+Vijes,1042
+Yotoco,1043
+Yumbo,1044
+Zarzal,1045
+Arauca,1046
+Arauquita,1047
+Cravo Norte,1048
+Fortul,1049
+Puerto Rondon,1050
+Saravena,1051
+Tame,1052
+Yopal,1053
+Aguazul,1054
+Chameza,1055
+Hato Corozal,1056
+La Salina,1057
+Mani,1058
+Monterrey,1059
+Nunchia,1060
+Orocue,1061
+Paz De Ariporo,1062
+Pore,1063
+Recetor,1064
+Sabanalarga,1065
+Sacama,1066
+San Luis De Palenque,1067
+Tamara,1068
+Tauramena,1069
+Trinidad,1070
+Villanueva,1071
+Mocoa,1072
+Colon,1073
+Orito,1074
+Puerto Asis,1075
+Puerto Caicedo,1076
+Puerto Guzman,1077
+Leguizamo,1078
+Sibundoy,1079
+San Francisco,1080
+San Miguel,1081
+Santiago,1082
+Valle Del Guamuez,1083
+Villagarzon,1084
+San Andres,1085
+Providencia,1086
+Leticia,1087
+El Encanto,1088
+La Chorrera,1089
+La Pedrera,1090
+La Victoria,1091
+Miriti - Parana,1092
+Puerto Alegria,1093
+Puerto Arica,1094
+Puerto Nariño,1095
+Puerto Santander,1096
+Tarapaca,1097
+Inirida,1098
+Barranco Minas,1099
+Mapiripana,1100
+San Felipe,1101
+Puerto Colombia,1102
+La Guadalupe,1103
+Cacahual,1104
+Pana Pana,1105
+Morichal,1106
+San Jose Del Guaviare,1107
+Calamar,1108
+El Retorno,1109
+Miraflores,1110
+Mitu,1111
+Caruru,1112
+Pacoa,1113
+Taraira,1114
+Papunaua,1115
+Yavarate,1116
+Puerto Carreño,1117
+La Primavera,1118
+Santa Rosalia,1119
+Cumaribo,1120
