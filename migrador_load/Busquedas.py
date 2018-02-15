@@ -18,7 +18,7 @@ def connectOdooWebServices(URL_11, DB_11, USERNAME_11, PASSWORD_11):
 
 
 def saveAttributes(FIELDS_RECORDS, name):
-    with open(name, 'w', encoding="ISO-8859-1") as csvfile:
+    with open(name, 'w') as csvfile:
         fieldnames = list(FIELDS_RECORDS[0].keys())
         writer = csv.DictWriter(
             csvfile, fieldnames=fieldnames)
@@ -31,13 +31,27 @@ print("conectando datos...")
 SOCK_11, UID_11 = connectOdooWebServices(
     URL_11, DB_11, USERNAME_11, PASSWORD_11)
 
-model = "res.country.state.city"
+model = "hr.job"
 
-# FIELDS_RECORDS = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'ir.model.fields', 'search_read', [
-#                                    ['&', ('model', '=', model), ('readonly', '=', False)]], {'fields': ['model', 'name', 'relation', 'readonly', 'required']})
+FIELDS_RECORDS = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'ir.model.fields', 'search_read', [
+    ['&', ('model', '=', model), ('readonly', '=', False)]], {'fields': ['model', 'name', 'relation', 'readonly', 'required']})
 
-FIELDS_RECORDS = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'res.country.state.city', 'search_read',
-                                    [[]], {'fields': ['name']})
+# FIELDS_RECORDS = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'hr.employee', 'search_read',
+#                                     [[]], {'fields': ['name', 'birthday']})
+
+# print(FIELDS_RECORDS)
+
+# errors = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'res.partner', 'write', [[440], {
+#     'street': 'CALLE FALSA 123', 'mobile': '', 'country_id/.id': '49', 'email': '', 'city_id/.id': '687', 'phone': '3145624898', 'state_id/.id': '687', 'name': 'Acosta Acuña Jose', 'function': '000604 AUXILIAR DE LOGISTICA', 'street2': 'Villa Arcadia'
+# }])
+
+# line_data = [['phone', 'state_id/.id', 'name', 'function', 'street2'],
+#              [['3145624898', '687', 'Acosta Acuna Jose', '000604 AUXILIAR DE LOGISTICA', 'Villa Arcadia']]]
+
+# errors = SOCK_11.execute_kw(
+#     DB_11, UID_11, PASSWORD_11, model, 'load', line_data)
+
+# print(errors)
 
 saveAttributes(FIELDS_RECORDS, "prueba.atributtes.csv")
 print(FIELDS_RECORDS)

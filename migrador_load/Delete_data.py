@@ -39,12 +39,12 @@ with open("DATA/Eliminate_Data/" + model + '.csv', encoding="ISO-8859-1") as inf
         if count < 1:
             count += 1
         else:
-            FIELDS_RECORDS = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'res.partner', 'search_read', [
-                [('vat', '=', record)]], {'fields': ['name', 'vat']})
+            FIELDS_RECORDS = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'hr.department', 'search_read', [
+                [('name', '=', record)]], {'fields': ['name']})
             for ids in FIELDS_RECORDS:
                 try:
                     error = SOCK_11.execute_kw(
-                        DB_11, UID_11, PASSWORD_11, 'res.partner', 'unlink', [[ids['id']]])
+                        DB_11, UID_11, PASSWORD_11, 'hr.department', 'unlink', [[ids['id']]])
                 except:
                     errors.append(ids)
 saveAttributes(errors, 'errors_respartner')

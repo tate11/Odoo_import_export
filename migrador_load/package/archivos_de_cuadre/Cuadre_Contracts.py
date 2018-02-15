@@ -19,7 +19,7 @@ DB_11 = "klarens-cti-master-12521"
 USERNAME_11 = 'admin'
 PASSWORD_11 = '0doo.admin'
 
-model = ['hr.employee']
+model = ['hr.contract']
 
 new_file = []
 inventory_name = {}
@@ -45,10 +45,7 @@ SOCK_11, UID_11 = connectOdooWebServices(
 
 departments = {}
 jobs = {}
-countries = {}
-addresses = {}
-genders = {}
-martials = {}
+employees = {}
 
 print("leyendo cvs")
 with open('../../DATA/External_Data/' + model[0] + '.csv', encoding="ISO-8859-1") as csvfile:
@@ -57,13 +54,23 @@ with open('../../DATA/External_Data/' + model[0] + '.csv', encoding="ISO-8859-1"
         try:
             department = record['department_id']
             job = record['job_id']
-            country = record['country_id']
-            address = record['address_home_id']
-            gender = record['gender']
-            marital = record['marital']
-            birthday = record['birthday']
-            birthday = birthday[0:4] + '-' + birthday[4:6] + \
-                '-' + birthday[6:len(birthday)]
+            employee = record['employee_id']
+            initial_date = record['date_start']
+            final_date = record['date_end']
+
+            if initial_date != 0:
+                initial_date = initial_date[0:4] + '-' + initial_date[4:6] + \
+                    '-' + initial_date[6:len(initial_date)]
+            else:
+                initial_date = ''
+
+            if final_date != 0:
+                final_date = final_date[0:4] + '-' + final_date[4:6] + \
+                    '-' + final_date[6:len(final_date)]
+            elif final_date == 'INDEFIN.':
+                final_date = ''
+            else:
+                final_date = ''
 
             if department not in departments:
                 id_department = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'hr.department', 'search_read',
@@ -80,35 +87,20 @@ with open('../../DATA/External_Data/' + model[0] + '.csv', encoding="ISO-8859-1"
                 else:
                     jobs[job] = job
 
-            if country not in countries:
-                id_country = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'res.country', 'search_read',
-                                                [[['name', '=', country]]], {'fields': ['name']})
-                if len(id_country) > 0:
-                    countries[country] = id_country[0]['id']
+            if employee not in employees:
+                id_employee = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'hr.employee', 'search_read',
+                                                [[['name', '=', employee]]], {'fields': ['name']})
+                if len(id_employee) > 0:
+                    employees[employee] = id_employee[0]['id']
                 else:
-                    countries[country] = country
+                    employees[employee] = employee
 
-            if address not in addresses:
-                id_address = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'res.partner', 'search_read',
-                                                [[('vat', '=', address)]], {'fields': ['name']})
-                if len(id_address) > 0:
-                    addresses[address] = id_address[0]['id']
-                else:
-                    addresses[address] = address
-
-            if gender in gender_dic:
-                genders[gender] = gender_dic[gender]
-
-            if marital in marital_dic:
-                martials[marital] = marital_dic[marital]
 
             record['department_id'] = departments[department]
             record['job_id'] = jobs[job]
-            record['country_id'] = countries[country]
-            record['address_home_id'] = addresses[address]
-            record['gender'] = genders[gender]
-            record['marital'] = martials[marital]
-            record['birthday'] = birthday
+            record['employee_id'] = employees[employee]
+            record['date_start'] = initial_date
+            record['date_end'] = final_date
 
             new_file.append(record)
         except:

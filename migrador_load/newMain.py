@@ -138,27 +138,19 @@ def my_export(url_origin, db_origin, username_origin, password_origin, url_desti
         i += 1
 
 
-def actualizate():
-    ids = []
-    vats = []
-    with open('errors_respartner', encoding="ISO-8859-1") as csvfile:
-        records = csv.reader(csvfile)
-        for record in records:
-            ids.append(record[0])
-            vats.append(record[2])
-    return ids, vats
+def saveError(file, errors, model_error, attributes):
+    print(errors)
+    return 1
 
 
 def migrate(file, model, sock, db, uid, password):
-    # Temporal
-    ids, vats = actualizate()
-    #####
     all_errors = []
     sizeDocument = os.path.getsize("DATA/" + file + "/" + model + '.csv')
-    with open("DATA/" + file + "/" + model + '.csv', encoding="ISO-8859-1") as csvfile:
+
+    attributes = []
+    with open("DATA/Datos/" + model + '.csv', encoding="ISO-8859-1") as csvfile:
         records = csv.reader(csvfile)
         header = 0
-        attributes = []
         record_to_migrate = []
         limit = 500
         for record in records:
@@ -186,47 +178,60 @@ def migrate(file, model, sock, db, uid, password):
                 else:
                     record_to_migrate.append(record)
             else:
-                record_to_migrate = []
-                record_to_migrate.append(record)
-                position = attributes.index()
-                if record[position] in vats:
-                    attributes.append('id/.id')
-                    record_to_migrate.append(ids[vats.index(record[position])])
-                data = [attributes, record_to_migrate]
-                errors = sock.execute_kw(
-                    db, uid, password, model, 'load', data)
+                try:
+                    record_to_migrate = []
+                    record_to_migrate.append(record)
+                    position = attributes.index('identification_id')
+                    new_data = {}
+                    id_record = sock.execute_kw(db, uid, password, model, 'search_read',
+                                                [[('identification_id', '=', record[position])]], {'fields': ['name']})
+                    if len(id_record) > 0:
+                        my_id = id_record[0]['id']
+                        for i in range(0, len(record)):
+                            new_data[attributes[i]] = record[i]
+                        update = sock.execute_kw(db, uid, password, model, 'write', [
+                            [int(my_id)], new_data])
+                    else:
+                        data = [attributes, record_to_migrate]
+                        errors = sock.execute_kw(
+                            db, uid, password, model, 'load', data)
+                        if len(errors['messages']) > 0 and errors['messages'][0]['type'] == 'error':
+                            all_errors.append(errors['messages'][0]['message'])
+                except:
+                    print(errors)
+                    # position1 = attributes.index('department_id/.id')
+                    # position2 = attributes.index('job_id/.id')
+                    # print(record[position1], ",", record[position2])
 
-                if len(errors['messages']) > 0 and errors['messages'][0]['type'] == 'error':
-                    all_errors.append(errors['messages'][0]['message'])
-
-    return all_errors
+    return all_errors, attributes
 
 
 def my_import(url, db, username, password):
-    print('\t Importando')
     print("Conectando a " + url + " . . .")
     sock, uid = connectOdooWebServices(
         url, db, username, password)
     # models = models(sock, db_import, uid, password_import)
     models = [{'model': 'hr.employee'}]
+
     i = 0
     while i < len(models):
         model = models[i]['model']
-        errors = migrate('Datos', model, sock, db, uid, password)
-        print(errors)
+        print('Importando', model, '. . .')
+        errors, attributes = migrate('Datos', model, sock, db, uid, password)
         i += 1
+        saveError('Datos', errors, model, attributes)
 
 
 def main():
-    # url_import = "https://klarens.odoo.com"
-    # db_import = "klarens-cti-master-12521"
-    # username_import = 'admin'
-    # password_import = '0doo.admin'
-
-    url_import = "https://klarens-staging-20231.dev.odoo.com"
-    db_import = "klarens-staging-20231"
+    url_import = "https://klarens.odoo.com"
+    db_import = "klarens-cti-master-12521"
     username_import = 'admin'
     password_import = '0doo.admin'
+
+    # url_import = "https://klarens-staging-20231.dev.odoo.com"
+    # db_import = "klarens-staging-20231"
+    # username_import = 'admin'
+    # password_import = '0doo.admin'
 
     url_export = "http://vallenata.test.3rp.la"
     db_export = "vallenata"
