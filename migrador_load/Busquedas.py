@@ -31,13 +31,17 @@ print("conectando datos...")
 SOCK_11, UID_11 = connectOdooWebServices(
     URL_11, DB_11, USERNAME_11, PASSWORD_11)
 
-model = "hr.job"
+model = "res.partner"
 
-FIELDS_RECORDS = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'ir.model.fields', 'search_read', [
-    ['&', ('model', '=', model), ('readonly', '=', False)]], {'fields': ['model', 'name', 'relation', 'readonly', 'required']})
+# id_property_payment_term = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'account.payment.term', 'search_read',
+#                                               [[['name', '=', '01 Day']]], {'fields': ['name']})
 
-# FIELDS_RECORDS = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'hr.employee', 'search_read',
-#                                     [[]], {'fields': ['name', 'birthday']})
+# print(id_property_payment_term)
+# FIELDS_RECORDS = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'ir.model.fields', 'search_read', [
+#     ['&', ('model', '=', model), ('readonly', '=', False)]], {'fields': ['model', 'name', 'relation', 'readonly', 'required']})
+
+FIELDS_RECORDS = SOCK_11.execute_kw(
+    DB_11, UID_11, PASSWORD_11, 'res.country.state.city', 'search_read', [[]], {'fields': ['name']})
 
 # print(FIELDS_RECORDS)
 

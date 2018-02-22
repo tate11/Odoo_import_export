@@ -27,9 +27,6 @@ SustitucionesLocation = {}
 
 print("Conectando")
 
-var_type_convert = {'CEDULA DE CIUDADANIA': 13,
-                    'NIT': 31, 'TARJETA IDENTIDAD': 12}
-
 
 def connectOdooWebServices(URL_11, DB_11, USERNAME_11, PASSWORD_11):
     SOCK = xmlrpclib.ServerProxy('{}/xmlrpc/2/object'.format(URL_11))
@@ -43,21 +40,19 @@ SOCK_11, UID_11 = connectOdooWebServices(
     URL_11, DB_11, USERNAME_11, PASSWORD_11)
 
 cities = {}
-states = {}
-countries = {}
-partners = {}
-var_types = {}
+SustitucionesCIIU = {'0': ''}
+property_payment_terms = {'0': ''}
+property_supplier_payment_terms = {'0': ''}
 
 print("leyendo cvs")
 with open('../../DATA/External_Data/' + model[0] + '.csv', encoding="ISO-8859-1") as csvfile:
     records = csv.DictReader(csvfile)
     for record in records:
         city = record['city_id']
-        state = record['state_id']
-        country = record['country_id']
-        partner = record['partner_id']
-        var_type = record['vat_type']
-        print
+        ciiu = record['ciiu_id']
+        property_payment_term = record['property_payment_term_id']
+        property_supplier_payment_term = record['property_supplier_payment_term_id']
+
         if city not in cities:
             id_city = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'res.country.state.city', 'search_read',
                                          [[['name', '=', city]]], {'fields': ['name']})
@@ -65,39 +60,34 @@ with open('../../DATA/External_Data/' + model[0] + '.csv', encoding="ISO-8859-1"
                 cities[city] = id_city[0]['id']
             else:
                 cities[city] = city
-        if state not in states:
-            id_state = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'res.country.state', 'search_read',
-                                          [[['name', '=', state]]], {'fields': ['name']})
-            if len(id_state) > 0:
-                states[state] = id_state[0]['id']
+
+        if ciiu not in SustitucionesCIIU:
+            id_ciiu = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'account.ciiu', 'search_read',
+                                         [[['name', '=', ciiu]]], {'fields': ['name']})
+            if len(id_ciiu) > 0:
+                SustitucionesCIIU[ciiu] = id_ciiu[0]['id']
             else:
-                states[state] = state
+                SustitucionesCIIU[ciiu] = ciiu
 
-        if country not in countries:
-            id_country = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'res.country', 'search_read',
-                                            [[['name', '=', country]]], {'fields': ['name']})
-            if len(id_country) > 0:
-                countries[country] = id_country[0]['id']
+        if property_payment_term not in property_payment_terms:
+            id_property_payment_term = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'account.payment.term', 'search_read',
+                                                          [[['name', '=', property_payment_term]]], {'fields': ['name']})
+            if len(id_property_payment_term) > 0:
+                property_payment_terms[property_payment_term] = id_property_payment_term[0]['id']
             else:
-                countries[country] = country
+                property_payment_terms[property_payment_term] = property_payment_term
 
-        if partner not in partners:
-            id_partner = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'res.partner', 'search_read',
-                                            [[['name', '=', partner]]], {'fields': ['name']})
-            if len(id_partner) > 0:
-                partners[partner] = id_partner[0]['id']
+        if property_supplier_payment_term not in property_supplier_payment_terms:
+            id_property_supplier_payment_term = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'account.payment.term', 'search_read',
+                                                                   [[['name', '=', property_supplier_payment_term]]], {'fields': ['name']})
+            if len(id_property_payment_term) > 0:
+                property_supplier_payment_terms[property_supplier_payment_term] = id_property_supplier_payment_term[0]['id']
             else:
-                partners[partner] = partner
-
-        if var_type not in var_types:
-            var_types[var_type] = var_type_convert[var_type]
-
+                property_supplier_payment_terms[property_supplier_payment_term] = property_supplier_payment_term
         record['city_id'] = cities[city]
-        record['state_id'] = states[state]
-        record['country_id'] = countries[country]
-        record['partner_id'] = partners[partner]
-        record['var_type'] = var_types[var_type]
-
+        record['ciiu_id'] = SustitucionesCIIU[ciiu]
+        record['property_payment_term_id'] = property_payment_terms[property_payment_term]
+        record['property_supplier_payment_term_id'] = property_supplier_payment_terms[property_supplier_payment_term]
         new_file.append(record)
 
 print("sobreescribiendo")

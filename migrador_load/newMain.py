@@ -146,7 +146,7 @@ def saveError(file, errors, model_error, attributes):
 def migrate(file, model, sock, db, uid, password):
     all_errors = []
     sizeDocument = os.path.getsize("DATA/" + file + "/" + model + '.csv')
-
+    errors = ''
     attributes = []
     with open("DATA/Datos/" + model + '.csv', encoding="ISO-8859-1") as csvfile:
         records = csv.reader(csvfile)
@@ -181,16 +181,17 @@ def migrate(file, model, sock, db, uid, password):
                 try:
                     record_to_migrate = []
                     record_to_migrate.append(record)
-                    position = attributes.index('identification_id')
+                    position = attributes.index('acc_number')
                     new_data = {}
                     id_record = sock.execute_kw(db, uid, password, model, 'search_read',
-                                                [[('identification_id', '=', record[position])]], {'fields': ['name']})
+                                                [[('acc_number', '=', record[position])]], {'fields': ['name']})
                     if len(id_record) > 0:
                         my_id = id_record[0]['id']
                         for i in range(0, len(record)):
                             new_data[attributes[i]] = record[i]
                         update = sock.execute_kw(db, uid, password, model, 'write', [
                             [int(my_id)], new_data])
+                        print(update)
                     else:
                         data = [attributes, record_to_migrate]
                         errors = sock.execute_kw(
@@ -198,7 +199,7 @@ def migrate(file, model, sock, db, uid, password):
                         if len(errors['messages']) > 0 and errors['messages'][0]['type'] == 'error':
                             all_errors.append(errors['messages'][0]['message'])
                 except:
-                    print(errors)
+                    print(sys.exc_info())
                     # position1 = attributes.index('department_id/.id')
                     # position2 = attributes.index('job_id/.id')
                     # print(record[position1], ",", record[position2])
@@ -211,7 +212,7 @@ def my_import(url, db, username, password):
     sock, uid = connectOdooWebServices(
         url, db, username, password)
     # models = models(sock, db_import, uid, password_import)
-    models = [{'model': 'hr.employee'}]
+    models = [{'model': 'res.partner.bank'}]
 
     i = 0
     while i < len(models):

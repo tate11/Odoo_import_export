@@ -27,10 +27,6 @@ SustitucionesLocation = {}
 
 print("Conectando")
 
-gender_dic = {'F': 'female', 'M': 'male'}
-marital_dic = {'SOLTERO': 'single', 'CASADO': 'married',
-               'DIVORCIADO': 'divorced', 'UNION LIBRE': 'married', 'VIUDO': 'widower'}
-
 
 def connectOdooWebServices(URL_11, DB_11, USERNAME_11, PASSWORD_11):
     SOCK = xmlrpclib.ServerProxy('{}/xmlrpc/2/object'.format(URL_11))
@@ -44,7 +40,7 @@ SOCK_11, UID_11 = connectOdooWebServices(
     URL_11, DB_11, USERNAME_11, PASSWORD_11)
 
 departments = {}
-jobs = {}
+jobs = {'No Existe Cargo': ''}
 employees = {}
 
 print("leyendo cvs")
@@ -64,11 +60,11 @@ with open('../../DATA/External_Data/' + model[0] + '.csv', encoding="ISO-8859-1"
             else:
                 initial_date = ''
 
-            if final_date != 0:
+            if final_date == 'INDEFIN.':
+                final_date = ''
+            elif final_date != 0:
                 final_date = final_date[0:4] + '-' + final_date[4:6] + \
                     '-' + final_date[6:len(final_date)]
-            elif final_date == 'INDEFIN.':
-                final_date = ''
             else:
                 final_date = ''
 
@@ -89,12 +85,11 @@ with open('../../DATA/External_Data/' + model[0] + '.csv', encoding="ISO-8859-1"
 
             if employee not in employees:
                 id_employee = SOCK_11.execute_kw(DB_11, UID_11, PASSWORD_11, 'hr.employee', 'search_read',
-                                                [[['name', '=', employee]]], {'fields': ['name']})
+                                                 [[['name', '=', employee]]], {'fields': ['name']})
                 if len(id_employee) > 0:
                     employees[employee] = id_employee[0]['id']
                 else:
                     employees[employee] = employee
-
 
             record['department_id'] = departments[department]
             record['job_id'] = jobs[job]
