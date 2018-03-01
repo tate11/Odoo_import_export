@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_importer_data" model="ir.ui.view">
+        <field name="name">importer.data.tree</field>
+        <field name="model">importer.data</field>
+        <field name="arch" type="xml">
+            <tree string="Importer data">
+                <field name="name"/>
+                <field name="host"/>
+                <field name="dbname"/>
+                <field name="user"/>
+                <field name="password"/>
+            </tree>
+        </field>
+    </record>
+    <record id="view_date_range_form_view" model="ir.ui.view">
+        <field name="name">importer.data.form</field>
+        <field name="model">importer.data</field>
+        <field name="arch" type="xml">
+            <form string="Importer data">
+                <header>
+                    <button name="connection" string="Connection" type="object"/>
+                    <button name="get_models" string="Get models" type="object"/>
+                </header>
+                <sheet>
+                    <group string="Importer data" col="4">
+                        <field name="type"/>
+                        <field name="name"/>
+                        <field name="host"/>
+                        <field name="dbname"/>
+                        <field name="user"/>
+                        <field name="password"/>
+                        <field name="path"/>
+                    </group>
+                    <notebook>
+                        <page string="Models">
+                            <field name="models_ids">
+                                <tree string="Models">
+                                    <field name="models_id"/>
+                                    <field name="exporter"/>
+                                    <field name="condition"/>
+                                    <field name="read_time"/>
+                                    <field name="write_time"/>
+                                    <field name="count"/>
+                                    <field name="fields_len"/>
+                                    <field name="limit"/>
+                                    <field name="file" filename="file_name"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record model="ir.actions.act_window" id="importer_data_action_window">
+        <field name="name">Importer data</field>
+        <field name="res_model">importer.data</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_importer" name="Importer" sequence="1"/>
+
+    <menuitem action="importer_data_action_window" id="menu_importer_data_action" parent="menu_importer"/>
+</odoo>
